@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Encryption/Decryption</title>
+  <style>
+    .container {
+      max-width: 500px;
+      margin: 0 auto;
+      text-align: center;
+      padding: 20px;
+    }
+    .btns {
+      margin-top: 10px;
+    }
+    textarea {
+      width: 100%;
+      margin: 10px 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <textarea [(ngModel)]="plainText" rows="5" cols="30" placeholder="Enter text to encrypt or decrypt"></textarea>
+    
+    <div class="btns">
+      <button (click)="encrypt()">Encrypt</button>
+      <button (click)="decrypt()">Decrypt</button>
+    </div>
+
+    <textarea [value]="cipherText" rows="5" cols="30" placeholder="Result of encryption/decryption" readonly></textarea>
+
+    <div class="btns">
+      <button (click)="clear()">Clear</button>
+    </div>
+  </div>
+</body>
+</html>

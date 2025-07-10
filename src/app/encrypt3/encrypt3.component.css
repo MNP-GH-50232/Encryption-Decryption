@@ -1,0 +1,54 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+div {
+    max-width: 600px;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: none;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+button {
+    /* background-color: #007bff; */
+    background-color: firebrick;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-right: 10px;
+}
+.btns {
+            display: flex;
+            justify-content: center;
+            margin-top: 10px; /* Add some space above the buttons */
+        }
+       
+
+
+button:hover {
+    /* background-color: #0056b3; */
+    background-color: maroon;
+}
+
+button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}

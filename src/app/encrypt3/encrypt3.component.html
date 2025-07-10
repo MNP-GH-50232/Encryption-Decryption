@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<div>
+  <h2 style="text-align: center;"> Encryption/Decryption</h2>
+  <div>
+    <!-- <h3>Encrypt</h3> -->
+    <textarea [(ngModel)]="plainText" rows="5" cols="30" placeholder="Enter text to encrypt/decrypt"></textarea>
+    <br>
+     <div class="btns">
+        <button (click)="encrypt()">Encrypt</button>
+        <button (click)="decrypt()">Decrypt</button>
+     </div>
+    <textarea [value]="cipherText" rows="5" cols="30"></textarea>
+  </div>
+   <div class="btns">
+      <button (click)="clear()">Clear</button>
+   </div>
+</div>
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- src/app/aes/aes.component.html -->
+<!-- <div>
+  <h2>AES Encryption/Decryption</h2>
+  <div>
+    <h3>Encrypt</h3>
+    <textarea [(ngModel)]="plainText" rows="5" cols="30" placeholder="Enter text to encrypt"></textarea>
+    <br>
+    <button (click)="encrypt()">Encrypt</button>
+    <h4>Encrypted Text:</h4>
+    <textarea [value]="cipherText" rows="5" cols="30" readonly></textarea>
+  </div>
+
+  <div>
+    <h3>Decrypt</h3>
+    <textarea [(ngModel)]="cipherText" rows="5" cols="30" placeholder="Enter text to decrypt"></textarea>
+    <br>
+    <button (click)="decrypt()">Decrypt</button>
+    <h4>Decrypted Text:</h4>
+    <textarea [value]="decryptedText" rows="5" cols="30" readonly></textarea>
+  </div>
+  <button (click)="clear()">Clear</button>
+</div>
+ -->
